@@ -8,18 +8,23 @@
     </head>
     <body>
        <div class="container">
-            <h2>Orders for @Model["vendor"].Name</h2>
-            <h3>Description: @Model["vendor"].Description</h3>
-            <ol>
-            @foreach (Order order in @Model["orders"])
-            {
-            <li><a href='/vendors/@Model["vendor"].ID/orders/@order.ID'>@order.Description</a></li>
-            }
-            </ol>
+            <div class="well">
+                <h2>Orders for @Model["vendor"].Name</h2>
+                <h2>Description: @Model["vendor"].Description</h2>
+                <h2>Orders: @Model["vendor"].Orders.Count</h2>
+                <div id="order-list">
+                    <ol>
+                    @foreach (Order order in @Model["orders"])
+                    {
+                    <li><a href='/vendors/@Model["vendor"].ID/orders/@order.ID'>@order.Description</a></li>
+                    }
+                    </ol>
+                </div>
+            </div>
 
-            <p><a href='/vendors/@Model["vendor"].ID/orders/new'>Add an order</a></p>
-            <p><a href='/vendors'>Return to vendor info</a></p>
-            <p><a href='/'>Return Home</a></p>
+            <h2><a href='/vendors/@Model["vendor"].ID/orders/new'>Add an order</a></h2>
+            <h2><a href='/vendors'>Return to vendor info</a></h2>
+            <h2><a href='/'>Return Home</a></h2>
        </div>
     </body>
 </html>

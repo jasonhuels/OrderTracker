@@ -7,16 +7,18 @@
     </head>
     <body>
         <div class="container">
-            <h1>Order Details: </h1>
+            <div class="well">
+                <h1>Order Details: </h1>
 
-            <h2>@Model["order"].Title</h2>
-            <h3>@Model["order"].Description</h3>
-            <h3>$@Math.Round(Model["order"].Price, 2)</h3>
-            <h3>@Model["order"].Date</h3>
-            <h3>Vendor: @Model["vendor"].Name</h3>
+                <h2>@Model["order"].Title</h2>
+                <h2>@Model["order"].Description</h2>
+                <h2>$@Math.Round(Model["order"].Price, 2)</h2>
+                <h2>@Model["order"].Date</h2>
+                <h2>Vendor: @Model["vendor"].Name</h2>
+            </div>
 
-            <a href='/vendors/@Model["vendor"].ID/orders/new'>Add another order</a>
-            <a href='/vendors'>View all vendors</a>
+            <h2><a href='/vendors/@Model["vendor"].ID/orders/new'>Add another order</a></h2>
+            <h2><a href='/vendors'>View all vendors</a></h2>
         </div>
     </body>
 </html>

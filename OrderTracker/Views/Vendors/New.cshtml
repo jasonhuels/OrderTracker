@@ -7,19 +7,17 @@
     </head>
     <body>
         <div class="container">
-            <h1>Add a vendor</h1>
-            <p>Add a vendor here:</p>
-
+            <h1>New vendor</h1>
+            <h2>Add a vendor here:</h2>
             <form action="/vendors" method="post">
-            <label for="name">Vendor name</label>
-            <input id="name" name="name" type="text">
-            <label for="description">Vendor description</label>
-            <input id="description" name="description" type="text">
-            <button type="submit">Add</button>
+                <label for="name">Vendor name</label>
+                <input id="name" name="name" type="text" required><br>
+                <label for="description">Vendor description</label>
+                <input id="description" name="description" type="text" required><br>
+                <button type="submit" class="btn btn-light">Add</button>
             </form>
-
-            <p><a href="/">Return Home</a></p>
-            <p><a href="/vendors">Return to vendors</a></p>
+            <h2><a href="/">Return Home</a><a href="/vendors">Return to vendors</a></h2>
+            <h2></h2>
         </div>
     </body>
 </html>

@@ -1,4 +1,58 @@
 body
 {
-  background-color: burlywood;
+  background-color: blanchedalmond;
+}
+
+.jumbotron
+{
+  background-color:burlywood;
+  text-align: center;
+}
+
+h1
+{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  text-align: center;
+  text-shadow: 2px 2px white;
+  font-style: italic;
+}
+
+h2
+{
+  text-align: center; 
+}
+
+a
+{
+  color: chocolate;
+  text-shadow: 1px 1px black;
+  padding: 0% 10%;
+}
+
+form
+{
+  text-align: center;
+}
+
+.well
+{
+  border: 5px solid black;
+  border-radius: 350px;
+  background-color: coral;
+}
+
+li
+{
+  font-size: 20px;
+  padding: 0 0 0 0;
+}
+
+input
+{
+  margin: 5px 0px;
+}
+ol
+{
+  list-style-position: inside;
+  text-align: center;
 }
