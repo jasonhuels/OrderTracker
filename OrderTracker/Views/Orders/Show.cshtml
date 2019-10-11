@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="screen" href="~/css/styles.css">
+        <title>Order</title>
+    </head>
+    <body>
+        <h1>Order Details: </h1>
+
+        <h2>@Model["order"].Title</h2>
+        <h3>@Model["order"].Description</h3>
+        <h3>$@Math.Round(Model["order"].Price, 2)</h3>
+        <h3>@Model["order"].Date</h3>
+        <h3>Vendor: @Model["vendor"].Name</h3>
+
+        <a href='/vendors/@Model["vendor"].ID/orders/new'>Add another order</a>
+        <a href='/vendors'>View all vendors</a>
+    </body>
+</html>

@@ -6,12 +6,14 @@ namespace OrderTracker.Models
     {
         private static List<Vendor> _instances = new List<Vendor> { };
         public string Name { get; set; }
+        public string Description { get; set; }
         public int ID { get; }
         public List<Order> Orders { get; set; }
 
-        public Category(string name)
+        public Vendor(string name, string description)
         {
             Name = name;
+            Description = description;
             _instances.Add(this);
             ID = _instances.Count;
             Orders = new List<Order> { };
@@ -22,12 +24,12 @@ namespace OrderTracker.Models
             _instances.Clear();
         }
 
-        public static List<Order> GetAll()
+        public static List<Vendor> GetAll()
         {
             return _instances;
         }
 
-        public static Category Find(int id)
+        public static Vendor Find(int id)
         {
             return _instances[id - 1];
         }
