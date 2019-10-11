@@ -21,7 +21,8 @@ _A C# web application to track Vendors and Orders for a bakery._
 
 ## Known Bugs
 
-_N/A_
+* Refreshing the page on the vendors/{id}/orders page causes the form to resubmit resulting in duplicate entries
+* Stylesheet does not always load on localhost:5000, if it doesn't try localhost:5001
 
 ## Support and contact details
 
