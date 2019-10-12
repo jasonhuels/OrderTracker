@@ -48,7 +48,8 @@ namespace OrderTracker.Controllers
             List<Order> vendorOrders = myVendor.Orders;
             model.Add("orders", vendorOrders);
             model.Add("vendor", myVendor);
-            return View("Show", model);
+            //return View("Show", model);
+            return RedirectToAction("Index");
         }
     }
 }
